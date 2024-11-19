@@ -1,0 +1,596 @@
+*
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav
+        {
+            width: 100%;
+            height: 110px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+        }
+        .logo 
+        {
+            width: 400px;
+            float: left;
+        }
+        .logo img 
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px 5px rgb(0,0,0,0.3);
+        }
+        .links ul
+        {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 600px;
+        }
+        .links ul li 
+        {
+            width: 90px;
+            border: 3px solid orange;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 1s;
+            height: 30px;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            font-family: poppins;
+            font-weight: bold;
+            font-size: 18px;
+           
+        }
+        .links ul li:hover
+        {
+            box-shadow: 0 5px 10px 0 rgb(255, 81, 0) inset,0 5px 10px 0 rgb(255, 81, 0),
+            0 5px 10px 0 rgb(255, 81, 0) inset,0 5px 10px 0 rgb(255, 81, 0);
+            cursor: pointer;
+        }
+        
+        .links ul li a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .icons
+        {
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            font-size: 20px; 
+        }
+        .icons i:hover 
+        {
+            color: orangered;
+            cursor: pointer;
+            font-size: 25px;
+            
+
+        }
+        .icon 
+        {
+            width: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn 
+        {
+            width: 130px;
+            background-color: orange;
+            border-radius: 30px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+           justify-content: center;
+           transition: all 1s;
+        }
+        .btn:hover 
+        {
+            background-color: orangered;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn a
+        {
+            text-decoration: none;
+            color: white;
+            font-family: poppins;
+        }
+        #home
+        {
+            width: 100%;
+            height: 100vh;
+        }
+        .boxes
+        {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .cir
+        {
+            width: 100px;
+            height: 100px;
+           
+            border-radius: 50%;
+            margin: 2px;
+            transition: all 1s;
+            margin-left: 10px;
+        }
+        .cir img 
+        {
+            width: 80px;
+            height: 80px;
+            border-radius: 40%;
+            transition: all 1s;
+           
+        }
+        .cir :hover
+        {
+            border-radius: 0px;
+            cursor: pointer;
+        }
+        .cir img:hover
+        {
+            border-radius: 0px;
+        }
+        h3 
+        {
+            margin-left: 2px;
+        }
+        .container
+        {
+            padding: 2rem;
+        }
+        .slider-wrapper
+        {
+            position: relative;
+            max-width: 48rem;
+        }
+        .slider
+        {
+            display: flex;
+            aspect-ratio: 15/9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75 hsla(0,0%,0%,0.25);
+            border-radius: 0.5rem;
+        }
+        .slider img 
+        {
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+        .slider-nav
+        {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a
+        {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0.75;
+            transform: opacity ease 250ms;
+        }
+        .slider-nav a:hover 
+        {
+            opacity: 1;
+        }
+        .part 
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left
+        {
+            width: 50%;
+        }
+        .right
+        {
+            width: 50%;
+        }
+        .right h2 
+        {
+            margin-top: 30px;
+        }
+        .right h1 
+        {
+            color: orange;
+        }
+        .image
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+        }
+        .place h2 
+        {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .box 
+        {
+            width: 350px;
+            height: 230px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 5px 10px 10px 5px rgb(0,0,0,0.3);
+        }
+        .box img 
+        {
+            width: 350px;
+            height: 230px;
+
+            border-radius: 20px;
+        }
+        
+        .box .content p 
+        {
+            position: relative;
+            bottom: 25px;
+            margin-left: 10px;
+            font-size: 15px;
+            transition: all 1s;
+            color: rgb(2, 0, 14);
+            font-size: 15px;
+        }
+        .box .content p:hover 
+        {
+            opacity: 1;
+            bottom: 80px;
+            cursor: pointer;
+        }
+        .box h3 
+        {
+            text-align: center;
+            top: 120px;
+            position: relative;
+            height: 2px;
+            font-size: 30px;
+            opacity: 0;
+            transition: all 2s;
+        }
+        .box h3:hover
+        {
+            opacity: 1;
+            cursor: pointer;
+            font-size: 35px;
+        }
+        
+        .place
+        {
+            width: 100%;
+            height: 1000px;
+        }
+        .place_container
+        {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .p_box
+        {
+            height: 400px;
+            width: 350px;            
+            box-shadow: 5px 10px 10px 5px rgb(0,0,0,0.3);
+           
+            transition: all 1s;
+        }
+       
+        .p_image
+        {
+            width: 350px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .p_image img 
+        {
+            width: 350px;
+            height: 250px;
+            transition: all 1s;
+        }
+        .p_image img:hover
+        {
+            transform: scale(1.1);
+        }
+       
+        .p_content h1
+        {
+            text-align: center;
+        }
+        .place h2
+        {
+            text-align: center;
+            margin-top: 30px;
+            color: orange;
+
+        }
+        .place .btn 
+        {
+            margin-left: 100px;
+        }
+        .place h2 a::after
+        {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: orange;
+            transition: 0.2s linear;
+        }
+        .place h2 a:hover::after 
+        {
+            width: 50%;
+        }
+        .packages
+        {
+            width: 100%;
+            height: 50vh;
+        }
+        .packages .boxes1
+        {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+        }
+        .packages .box1 
+        {
+            width: 300px;
+            height: 230px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 5px 10px 10px 5px rgb(0,0,0,0.3);
+            transition: all 1s;
+        }
+        .packages .box1:hover 
+        {
+            height: 300px;
+            cursor: pointer;
+        }
+        .packages h1 
+        {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .b_image
+        {
+            width: 300px;
+            height: 300px;
+        }
+        .b_image img 
+        {
+            width: 300px;
+            height: 230px;
+            border-radius: 20px;
+            margin-bottom: 65px;
+        }
+       .box1 h4 
+       {
+        position: relative;
+        color: white;
+        bottom: 100px;
+       }
+       .box1 p 
+       {
+            position: relative;
+            bottom: 80px;
+            font-size: 15px;
+       }
+       .review
+       {
+            width: 100%;
+            height: 90vh;
+       }
+       .review h1 
+       {
+            height: 80px;
+            
+       }
+       .r_container
+       {
+            width: 100%;
+            height: 450px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap:10px;
+       }
+       .r_box
+       {
+            width: 100%;
+            height: 120px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           box-shadow: 5px 5px 5px 5px rgb(0,0,0,0.3);
+       }
+       .r_box p 
+       {
+        font-size: 15px;
+        
+       }
+       .r_box p i 
+       {
+        color: orange;
+       }
+       .circle
+        {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 2px;
+            transition: all 1s;
+            margin-left: 10px;
+        }
+        .circle img 
+        {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: all 1s;
+           
+        }
+        .circle :hover
+        {
+            border-radius: 0px;
+            cursor: pointer;
+        }
+        .circle img:hover
+        {
+            border-radius: 0px;
+        }
+        footer 
+        {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: orange;
+        }
+        footer i 
+        {
+          margin-left: 10px;
+        }
+        @media screen and (max-width:620px)
+        {
+            nav 
+            {
+                width: 100%;
+                height: 220px;
+            }
+            .logo 
+            {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .links 
+            {
+                width: 380px;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .links ul li 
+            {
+                width: 70px;
+            }
+            .links li a
+            {
+                font-size: 14px;
+            }
+            .boxes
+            {
+                height: 320px;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                margin-left: 30px;
+                width: 350px;
+            }
+            .cir 
+            {
+                height: 50px;
+                width: 50px;
+                font-size: 10px;
+            }
+            .cir img 
+            {
+                height: 50px;
+                width: 50px;
+            }
+            .part 
+            {
+                height: 910px;
+                display: grid;
+                grid-template-columns: 1fr;   
+            }
+            .part .left 
+            {
+                width: 380px;
+            }
+           
+            .part .right 
+            {
+                width: 380px;
+                margin-bottom: 200px; 
+                font-size: 15px;
+                margin-top: 0px;
+            }
+            .box 
+            {
+                margin-top: 10px;
+               
+            }
+            .place_container
+            {
+                gap: 25px;
+            }
+            .place
+            {
+                height: 3600px;
+            }
+            .packages
+            {
+                height: 1100px;
+            }
+            .boxes1 
+            {
+                gap:10px;
+            }
+            .review 
+            {
+                height: 700px;
+            }
+           
+           .rev p 
+           {
+            font-size: 8px;
+
+           }
+           
+        }
